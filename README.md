@@ -5,10 +5,8 @@ Hi! Here you can access photos of stuff I mentioned in my Personal Statement.
 
 ##  [uni programmes](https://minchxy.github.io/universities/index.html)
 
-## 
+## [eco action week](https://minchxy.github.io/eco-action-week/index.html)
 
-- what am i including
-- eco action week
 - one special video i wanna show off
 
-##  [here](https://minchxy.github.io/)
+##  [](https://minchxy.github.io/)
