@@ -7,6 +7,4 @@ Hi! Here you can access photos of stuff I mentioned in my Personal Statement.
 
 ## [eco action week](https://minchxy.github.io/eco-action-week/index.html)
 
-- one special video i wanna show off
-
 ##  [](https://minchxy.github.io/)
