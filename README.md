@@ -1,4 +1,4 @@
-# Welcome to my [Github](https://github.com/minchxy) Page!
+# Welcome to my Page!
 Hi! Here you can access photos of stuff I mentioned in my Personal Statement. 
 
 ##  [beach clean up](https://minchxy.github.io/beach/index.html)
