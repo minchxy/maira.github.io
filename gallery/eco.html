@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.mklogo {
+    transition: transform .7s ease-in-out;
+}
+
+.mklogo:hover {
+    transform: rotate(360deg);
+}
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-  <div class="w3-bar-block">
-    <a href="https://minchxy.github.io/" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOMEPAGE</a> 
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img class="mklogo" src="media/mk.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>MENU</b></h4>
   </div>
+  <div class="w3-bar-block">
+    <a href="main.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="material-icons" style="width: 1.28571429em;text-align: center;display: inline-block;font: normal normal normal 14px/1;font-size: inherit;text-rendering: auto;padding-right:22px;padding-right:22px;">home</i>Home</a> 
+    <a href="eco.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="material-icons" style="width: 1.28571429em;text-align: center;display: inline-block;font: normal normal normal 14px/1;font-size: inherit;text-rendering: auto;padding-right:22px;">eco</i>Eco Action Week</a> 
+    <a href="beach.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="material-icons" style="width: 1.28571429em;text-align: center;display: inline-block;font: normal normal normal 14px/1;font-size: inherit;text-rendering: auto;padding-right:22px;">hiking</i>Beach Clean Up</a>
+    <a href="uni.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="material-icons" style="width: 1.28571429em;text-align: center;display: inline-block;font: normal normal normal 14px/1;font-size: inherit;text-rendering: auto;padding-right:22px;">school</i>Uni Programmes</a> 
+    <a href="video.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="material-icons" style="width: 1.28571429em;text-align: center;display: inline-block;font: normal normal normal 14px/1;font-size: inherit;text-rendering: auto;padding-right:22px;">movie</i>Video</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
   <!-- Header -->
   <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <a href="#"><img src="media/mk.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>Eco-Action Week!!</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-    </div>
     </div>
   </header>
+  
   
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/carbon literacy.jpg" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/carbon literacy.jpg" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>First Carbon Literacy session.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/datascientist.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/datascientist.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Nathanael the Climate Data Scientist from my Council (Waltham Forest), introducing himself to us.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/ideas.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/ideas.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Voting on everyone's local ideas about climate action, having had urban planning consultations with an Architect and Planning Policy Lead (from the council of course).</p>
@@ -55,21 +83,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4354.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4354.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Discovered 11 showers in the basement of my council..</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4357.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4357.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p></p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/IMG_4436.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4436.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>What could possibly be in there?</p>
@@ -80,21 +108,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- third Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/surveyplanning.jpg" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/surveyplanning.jpg" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Discussing with my group, questions to put on our survey to find out what people in Chingford feel about our idea.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4363.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4363.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>QR codes we made members of the public scan to do our survey.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/IMG_4365.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4365.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Chingford Station</p>
@@ -105,21 +133,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
    <!-- 4 Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4366.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4366.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Walking to The Hive.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4369.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4369.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Through Epping Forest.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/IMG_4381.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4381.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Made it to the Lodge!</p>
@@ -130,21 +158,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- 5 Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4374.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4374.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Fishing for bugs in a large pond.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4379.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4379.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Cute spider! (to be more specific it is a cute Araneus diadematus)</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/IMG_4372.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4372.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p></p>
@@ -155,21 +183,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- 6 Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4377.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4377.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>We were chasing butterflies, but caught moths.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4397.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4397.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>I really wanted a stick insect after that.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/IMG_4409.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4409.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Tried S'mores for the first time. That fire didn't die until 1am.</p>
@@ -180,21 +208,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- 7 Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/sawing2.jpg" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/sawing2.jpg" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Hard at work.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/sawing.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/sawing.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Still hard at work..</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/bughuitthing.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/bughuitthing.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>We were sawing to make a Bug Hotel!</p>
@@ -205,21 +233,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- 8 Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4417.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4417.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Beautiful view at breakfast.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4435.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4435.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Interesting how this Asian Hornet spread from France to the UK in 2016, and recently, there's a fear of bed bugs from Paris of invading the UK too. </p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/IMG_4430.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4430.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Leaving the Hive :( It was amazing.</p>
@@ -230,21 +258,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- 9 Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4428.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4428.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Mind Map of our ideas before we turned it into a poster.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4437.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4437.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Discovering more rooms in the town hall. Why are these displays buried away in the basement..?</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/presenting.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/presenting.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Presenting to the council members for the first time, with a rough draft of our plan.</p>
@@ -255,21 +283,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- 10 Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4439.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4439.JPG" alt="bopway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Quick lunch at the local Ethiopian/Eritrean restaurant.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/IMG_4440.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4440.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Absolutely banging!</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="images/IMG_4441.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="media/eco-action-week/IMG_4441.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b></b></p>
         <p>Doing a goodbye survey :(</p>
@@ -278,3 +306,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 
 
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  </footer>
+ 
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
