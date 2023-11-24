@@ -1,5 +1,5 @@
 # Welcome to my Page!
-Hi! Here you can access photos of stuff I mentioned in my Personal Statement. 
+Hi! Here you can access photos of stuff I mentioned in my Personal Statement + more. 
 
 ##  [beach clean up](https://minchxy.github.io/beach/index.html)
 
@@ -7,4 +7,4 @@ Hi! Here you can access photos of stuff I mentioned in my Personal Statement.
 
 ## [eco action week](https://minchxy.github.io/eco-action-week/index.html)
 
-##  [](https://minchxy.github.io/)
+##  [videos](https://minchxy.github.io/)
