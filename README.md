@@ -7,4 +7,4 @@ Hi! Here you can access photos of stuff I mentioned in my Personal Statement + m
 
 ##  [uni programmes](https://minchxy.github.io/universities/index.html)
 
-##  [video](https://minchxy.github.io/)
+##  [video](https://minchxy.github.io/videos.html)
