@@ -1,10 +1,13 @@
 # Welcome to my Page!
 Hi! Here you can access photos of stuff I mentioned in my Personal Statement + more. 
 
-## [eco action week](https://minchxy.github.io/eco-action-week/index.html)
+## [main page](https://minchxy.github.io/gallery/main.html)
 
-##  [beach clean up](https://minchxy.github.io/beach/index.html)
 
-##  [uni programmes](https://minchxy.github.io/universities/index.html)
+### [eco action week](https://minchxy.github.io/eco-action-week/index.html)
 
-##  [video](https://minchxy.github.io/videos.html)
+###  [beach clean up](https://minchxy.github.io/beach/index.html)
+
+###  [uni programmes](https://minchxy.github.io/universities/index.html)
+
+###  [video](https://minchxy.github.io/videos.html)
