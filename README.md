@@ -4,10 +4,10 @@ Hi! Here you can access photos of stuff I mentioned in my Personal Statement + m
 ## [main page](https://minchxy.github.io/gallery/main.html)
 
 
-### [eco action week](https://minchxy.github.io/eco-action-week/index.html)
+### [eco action week](https://minchxy.github.io/gallery/eco.html)
 
-###  [beach clean up](https://minchxy.github.io/beach/index.html)
+###  [beach clean up](https://minchxy.github.io/gallery/beach.html)
 
-###  [uni programmes](https://minchxy.github.io/universities/index.html)
+###  [uni programmes](https://minchxy.github.io/gallery/uni.html)
 
-###  [video](https://minchxy.github.io/videos.html)
+###  [video](https://minchxy.github.io/gallery/video.html)
